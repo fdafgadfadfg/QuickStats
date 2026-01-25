@@ -2,11 +2,11 @@
     "ID": "9eb153c946cb41bc9f36ed92aee545bf",
     "ActionKeyword": "stats",
     "Name": "QuickStats",
-    "Description": "Rolls the given dice and evaluates the expression",
-    "Author": "lvonkacsoh",
+    "Description": "Stats",
+    "Author": "Me",
     "Version": "2.0.1",
     "Language": "python",
     "Website": "",
-    "IcoPath": "assets\\icon.jpg",
+    "IcoPath": "",
     "ExecuteFileName": "quick_stats.py"
 }
