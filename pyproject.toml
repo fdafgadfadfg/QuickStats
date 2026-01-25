@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = 'PEC4'
+description = 'QS'
+readme = 'README.txt'
+requires-python = '>=3.11'
+dependencies = [
+'pandas >=2.3.3',
+'scipy>= 1.16.2',
+'flowlauncher >= 0.1.1'
+]
+
+[project.optional-dependencies]
+developer = [
+'pylint>= 4.0.4' 
+]
