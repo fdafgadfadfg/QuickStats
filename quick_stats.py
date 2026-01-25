@@ -1,10 +1,11 @@
 
 import sys
-from pathlib import Path
-
-plugindir = Path.absolute(Path(__file__).parent)
-paths = (".", "lib", "plugin")
-sys.path = [str(plugindir / p) for p in paths] + sys.path
+import sys
+import os
+parent_folder_path = os.path.abspath(os.path.dirname(__file__))
+sys.path.append(parent_folder_path)
+sys.path.append(os.path.join(parent_folder_path, 'lib'))
+sys.path.append(os.path.join(parent_folder_path, 'plugin'))
 from scipy import stats
 from flowlauncher import FlowLauncher 
 class QuickStats(FlowLauncher):
