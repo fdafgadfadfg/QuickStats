@@ -26,4 +26,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r ./requirements.txt -t ./lib
         zip -r Flow.Launcher.Plugin.QuickStats.zip . -x '*.git*'
+    - name: Publish
+      if: success()
+      uses: softprops/action-gh-release@v1
+      with:
+          files: 'Flow.Launcher.Plugin.RollDice.zip'
+          tag_name: "v${{steps.version.outputs.prop}}"
     
