@@ -35,6 +35,6 @@ jobs:
       with:
           files: 'Flow.Launcher.Plugin.QuickStats.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
