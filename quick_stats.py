@@ -10,6 +10,7 @@ from scipy import stats
 from flowlauncher import FlowLauncher 
 class QuickStats(FlowLauncher):
     def query(self, query):
+       
        return [
             {
                 "Title": "Mean and stdev, comma separated.",
